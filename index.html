@@ -61,10 +61,18 @@
     background:radial-gradient(ellipse at center, transparent 62%, rgba(0,0,0,.28) 100%); }
   @media (max-width:900px){
     #help{ display:none; }
+    #controls{ left:8px; right:8px; transform:none; width:auto; bottom:8px; }
   }
   @media (max-width:640px){
-    #title{ padding:10px 12px; } #title h1{ font-size:15px; }
-    #stats{ padding:8px 10px; gap:10px; } #stats .v{ font-size:16px; }
+    #title{ top:8px; left:8px; right:8px; max-width:none; padding:8px 10px; }
+    #title h1{ font-size:15px; }
+    #title h1 span{ display:none; }
+    #title .row{ margin-top:6px; }
+    #stats{ top:86px; left:8px; right:auto; padding:6px 10px; gap:12px; }
+    #stats .s{ min-width:46px; }
+    #stats .v{ font-size:16px; }
+    #stats .k{ font-size:10px; }
+    #toast{ top:148px; max-width:calc(100vw - 24px); text-align:center; }
   }
 </style>
 <script type="importmap">
